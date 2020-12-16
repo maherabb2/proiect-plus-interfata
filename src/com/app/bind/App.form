@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.app.bind.App">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="1018" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <tabbedpane id="73d7e" binding="tabbedPane1" default-binding="true">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="200"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="609ac" binding="client" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <tabbedpane title="Client"/>
+            </constraints>
+            <properties>
+              <alignmentX value="0.5"/>
+              <alignmentY value="0.5"/>
+              <focusCycleRoot value="false"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="8627b" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+                <constraints border-constraint="North"/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="489fc" class="javax.swing.JLabel">
+                    <constraints/>
+                    <properties>
+                      <text value="Produs id:"/>
+                    </properties>
+                  </component>
+                  <component id="d1d4" class="javax.swing.JTextField" binding="produs">
+                    <constraints/>
+                    <properties>
+                      <horizontalAlignment value="2"/>
+                      <inheritsPopupMenu value="false"/>
+                      <minimumSize width="100" height="30"/>
+                      <preferredSize width="100" height="30"/>
+                      <requestFocusEnabled value="true"/>
+                    </properties>
+                  </component>
+                  <component id="eba0d" class="javax.swing.JLabel">
+                    <constraints/>
+                    <properties>
+                      <text value="Cantitate"/>
+                    </properties>
+                  </component>
+                  <component id="556aa" class="javax.swing.JTextField" binding="quantity">
+                    <constraints/>
+                    <properties>
+                      <horizontalAlignment value="2"/>
+                      <minimumSize width="100" height="30"/>
+                      <opaque value="true"/>
+                      <preferredSize width="100" height="30"/>
+                    </properties>
+                    <clientProperties>
+                      <html.disable class="java.lang.Boolean" value="false"/>
+                    </clientProperties>
+                  </component>
+                  <component id="4ce12" class="javax.swing.JButton" binding="scaneazaButton" default-binding="true">
+                    <constraints/>
+                    <properties>
+                      <text value="Scaneaza"/>
+                    </properties>
+                  </component>
+                  <component id="606c9" class="javax.swing.JButton" binding="stergeButton" default-binding="true">
+                    <constraints/>
+                    <properties>
+                      <text value="Sterge"/>
+                    </properties>
+                  </component>
+                  <component id="97172" class="javax.swing.JButton" binding="anulareButton" default-binding="true">
+                    <constraints/>
+                    <properties>
+                      <text value="Anulare"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="93e82" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints border-constraint="Center"/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="fab44" class="javax.swing.JTable" binding="shoppingTable">
+                    <constraints border-constraint="Center"/>
+                    <properties/>
+                  </component>
+                  <grid id="a727c" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints border-constraint="South"/>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="f4585" class="javax.swing.JButton" binding="totalPlataButton" default-binding="true">
+                        <constraints>
+                          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="100" height="30"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <text value="Total plata"/>
+                        </properties>
+                      </component>
+                      <component id="db434" class="javax.swing.JButton" binding="finalizarePlataButton" default-binding="true">
+                        <constraints>
+                          <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="130" height="30"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <text value="Finalizare plata"/>
+                        </properties>
+                      </component>
+                      <component id="8381d" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                            <preferred-size width="35" height="30"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <text value="Total:"/>
+                        </properties>
+                      </component>
+                      <component id="515a4" class="javax.swing.JLabel" binding="totalPlata">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                            <preferred-size width="7" height="30"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <text value="?"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="ea1c8" binding="manager" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <tabbedpane title="Casier"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="b91a" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+                <constraints border-constraint="North"/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="f696c" class="javax.swing.JButton" binding="adaugaProdusButton" default-binding="true">
+                    <constraints/>
+                    <properties>
+                      <text value="Adauga produs"/>
+                    </properties>
+                  </component>
+                  <component id="4e151" class="javax.swing.JButton" binding="afisareCategorieButton" default-binding="true">
+                    <constraints/>
+                    <properties>
+                      <text value="Afisare categorie"/>
+                    </properties>
+                  </component>
+                  <component id="18667" class="javax.swing.JButton" binding="stergeProdusButton" default-binding="true">
+                    <constraints/>
+                    <properties>
+                      <text value="Sterge produs"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="44fd" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints border-constraint="Center"/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="315c4" class="javax.swing.JTable" binding="printCategoryTable">
+                    <constraints border-constraint="North"/>
+                    <properties>
+                      <fillsViewportHeight value="false"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="e36d7" binding="admin" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <tabbedpane title="Admin"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="f6575" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+                <constraints border-constraint="North"/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="1c02d" class="javax.swing.JButton" binding="adaugaCasierButton" default-binding="true">
+                    <constraints/>
+                    <properties>
+                      <text value="Adauga casier"/>
+                    </properties>
+                  </component>
+                  <component id="6ef80" class="javax.swing.JButton" binding="afisareCasieriButton" default-binding="true">
+                    <constraints/>
+                    <properties>
+                      <text value="Afisare casieri"/>
+                    </properties>
+                  </component>
+                  <component id="edb09" class="javax.swing.JButton" binding="stergeCasierButton" default-binding="true">
+                    <constraints/>
+                    <properties>
+                      <text value="Sterge casier"/>
+                    </properties>
+                  </component>
+                  <vspacer id="412e0">
+                    <constraints/>
+                  </vspacer>
+                  <component id="f7bb2" class="javax.swing.JLabel">
+                    <constraints/>
+                    <properties>
+                      <text value="Total vanzari: "/>
+                    </properties>
+                  </component>
+                  <component id="c3bd3" class="javax.swing.JLabel" binding="totalVanzariField">
+                    <constraints/>
+                    <properties>
+                      <text value="?"/>
+                    </properties>
+                  </component>
+                  <component id="cc758" class="javax.swing.JButton" binding="totalVanzariButton" default-binding="true">
+                    <constraints/>
+                    <properties>
+                      <text value="Total vanzari"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="48831" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints border-constraint="Center"/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="e544f" class="javax.swing.JTable" binding="cashierTable">
+                    <constraints border-constraint="Center"/>
+                    <properties/>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+        </children>
+      </tabbedpane>
+    </children>
+  </grid>
+</form>
